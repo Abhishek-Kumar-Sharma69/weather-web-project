@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:ital,opsz,wght@1,8..30,300&family=Quicksand&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Piazzolla",sans-serif;
+}
+
+:root{
+    --main-bg: #060d35;
+    --main-color: #f4dfb1;
+}
+
+html{
+    font-size: 62.5%;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.row{
+    margin: 0;
+}
+.main_menu{
+    background-color: var(--main-bg);
+}
+.navbar{
+    color:#fff;
+    background-color: var(--main-bg);
+    padding: 20px;
+}
+.navbar li{
+    margin-left: 20px;
+}
+.navbar a{
+    color: #fff;
+    font-size: 18px;
+}
+.navbar a:hover{
+    color:aqua;
+}
+.navbar-toggler-icon{
+    background-color:#efefef;
+}
+.fa-snowflake{
+    color:var(--main-color);
+    transition: all linear;
+    animation: rotation 2s linear infinite;
+}
+
+@keyframes rotation{
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+}
+
+.main_header_left{
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.main_header_left p{
+    font-size: 25px;
+}
+.main_header_left h1{
+    font-size: 50px;
+    margin: 15px 0 40px 0;
+    text-transform: capitalize;
+}
+.main_header_left .wethcol{
+    color:aqua;
+}
+.main_header_left button{
+    border:none;
+    padding:8px 20px;
+    font-size: 20px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    box-shadow: 0 8px 6px -6px #000;
+}
+.main_header_left button:hover{
+    box-shadow: 0 8px 6px -6px aqua;
+}
+.main_header_right{
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.main_header_right figure{
+    filter: drop-shadow(0 5px 10px rgba(0,0,0,0.3));
+}
+.temp_form{
+    width: 60%;
+    position: relative;
+    margin: 50px auto;
+}
+.temp_form input[type="text"]{
+    width:100%;
+    padding: 20px 50px 20px 20px;
+    background: #1e202b;
+    color:white;
+    outline-offset: 2px;
+    border:none;
+    font-size: 18px;
+    border-radius: 30px;
+}
+::placeholder{
+    color:#bfc1c8;
+}
+.temp_form input[type="submit"]{
+    position: absolute;
+    top:5px;
+    right:5px;
+    bottom:5px;
+    border:none;
+    background:aqua;
+    padding: 0 30px;
+    border-radius: 30px;
+    color:#fff;
+    font-size: 16px;
+    width:auto;
+}
+.temp_form input[type="submit"]:hover{
+     color:aqua;
+     background-color: #fff;
+}
+.temp_info{
+    margin:auto;
+    width: 500px;
+    min-height:200px;
+    background-color: #323554;;
+    border-radius: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.top_layer{
+    width:100%;
+    height:20%;
+    background-color: #2d303d;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+}
+.top_layer p{
+    color:#fff;
+    font-weight:300;
+    font-size:20px;
+    padding:20px;
+}
+.main_layer{
+    width:100%;
+    height: 80%;
+    display:flex;
+    flex-direction: column;
+    padding:20px;
+}
+#cityname{
+    padding:20px 0;
+    color:#bfc1c8;
+    font-weight:300;
+    font-size:30px;
+}
+ .middle_layer{
+    display: flex;
+    justify-content: space-around;
+    color:#fff;
+    margin-bottom: 20px;
+} 
+#temp{
+    
+    color:#fff;
+    font-size: 70px;
+    font-weight:900;
+}
+#temp_status{
+    color:aqua;
+    font-size: 70px;
+}
+sup{
+    color:#fff;
+    font-size: 60px;
+    margin-top:-20px;
+}
+.data_hide{
+    visibility: hidden;
+    transition: all 0.5s linear;
+}
+.err{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    color:red;
+}
+.errimg img{
+    width: 500px;
+    height: 300px;
+}
+/* footer code*/
+footer{
+    width:100%;
+    background-color: var(--main-bg);
+    margin-top: auto;
+}
+footer p{
+    margin:0;
+    text-align: center;
+    color:#fff;
+    line-height: 60px;
+    font-size:15px;
+}
+
+@media(max-width:768px) {
+    .main_header_left{
+        height:auto;
+        margin:50px 0px;
+    }
+    .main_header_right{
+        height:auto;
+        margin-top:30px;
+    }
+}
